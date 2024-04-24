@@ -2,10 +2,8 @@ import React, { useState } from "react";
 import { FaUser, FaUserCog } from "react-icons/fa";
 import { FaClipboardList } from "react-icons/fa6";
 import { MdSpaceDashboard } from "react-icons/md";
-
-
 import { Link } from "react-router-dom";
-import logo from "../assets/img/logo.png";
+import logo from "../assets/svg/logo.svg";
 import "./layout.css";
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {

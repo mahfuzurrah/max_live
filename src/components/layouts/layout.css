@@ -88,7 +88,7 @@
   height: 75px;
   position: sticky;
   top: 0;
-  background: transparent;
+  background: var(--body-color);
   display: flex;
   align-items: center;
   justify-content: end;
