@@ -12,31 +12,31 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
   const [menuItems, setMenuItems] = useState([
     {
       id: 1,
-      label: "Panel",
+      label: "Dashboard",
       icon: <MdSpaceDashboard className="icons" />,
       isActive: true,
       route: "/dashboard",
     },
     {
       id: 2,
-      label: "Lista De Invitados",
+      label: "Datasets",
       icon: <FaClipboardList className="icons" />,
       isActive: false,
-      route: "/guests_list",
+      route: "/datasets",
     },
     {
       id: 3,
-      label: "Administrar Roles ",
+      label: "Models",
       icon: <FaUserCog className="icons" />,
       isActive: false,
-      route: "/manage_roles",
+      route: "/models",
     },
     {
       id: 4,
-      label: "Administrar Usuarios",
+      label: "Wallet",
       icon: <FaUser className="icons" />,
       isActive: false,
-      route: "/manage_users",
+      route: "/wallet",
     },
   ]);
 
