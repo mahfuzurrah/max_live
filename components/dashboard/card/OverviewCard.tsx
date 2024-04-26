@@ -1,8 +1,7 @@
 import React from "react";
 import ArroUp from "@/public/images/up.svg";
 import Image from "next/image";
-import { CardItem } from "@/app/(dashboard)/dashboard/types";
-
+import { CardItem } from "@/types";
 
 const OverviewCard = ({ imgSrc, title, number, gain }: CardItem) => {
   return (

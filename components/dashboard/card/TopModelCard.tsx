@@ -1,7 +1,8 @@
+import { TopModel } from "@/types";
 import Image from "next/image";
 import React from "react";
 
-const TopModelCard = ({
+export default function TopModelCard({
   count,
   userImgSrc,
   userName,
@@ -10,7 +11,7 @@ const TopModelCard = ({
   liveCount,
   followersCount,
   avgRating,
-}) => {
+}: TopModel) {
   return (
     <div className="card-item">
       <div className="count-number">{count}</div>
@@ -38,4 +39,3 @@ const TopModelCard = ({
   );
 };
 
-export default TopModelCard;

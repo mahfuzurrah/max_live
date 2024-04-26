@@ -1,8 +1,9 @@
 import React from "react";
 import ReactApexChart from "react-apexcharts";
+import { ApexOptions } from "apexcharts";
 
-const PieChart = () => {
-  const options = {
+export default function PieChart() {
+  const options: ApexOptions = {
     chart: {
       width: 380,
       type: "donut",
@@ -28,11 +29,7 @@ const PieChart = () => {
       offsetY: 0,
       height: 230,
       labels: {
-        backgroundColor: ["#4153f6", "#a9c6ff"], // Background colors for the labels
-        formatter: function (val: any, opts: any) {
-          const sales = opts.w.globals.series[opts.seriesIndex];
-          return `<div><span>${val}</span><span> - Sales: ${sales}</span></div>`;
-        },
+        colors: ["#4153f6", "#a9c6ff"]
       },
     },
     labels: [
@@ -51,4 +48,3 @@ const PieChart = () => {
   );
 };
 
-export default PieChart;
