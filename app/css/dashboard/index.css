@@ -180,7 +180,6 @@ section {
   font-size: 20px;
 }
 
-
 .btn {
   padding: 5px 26px;
   background: var(--primary-color);
@@ -352,6 +351,21 @@ section {
 
 .ant-layout-content {
   background-color: var(--body-color) !important;
+}
+
+.wallet-btn {
+  padding: 5px 26px;
+  border-radius: 12px;
+  font-size: var(--small-font-size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  background: transparent;
+  color: var(--desc-color);
+  font-weight: var(--font-medium);
+  border: 1px solid #c4c4c4 !important;
 }
 
 .dashboard .card {

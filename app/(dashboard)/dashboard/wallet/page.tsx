@@ -4,6 +4,7 @@ import { Input, Switch } from "antd";
 import FilterIcon from "@/public/images/filter.svg";
 import { SwitchChangeEventHandler } from "antd/es/switch";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function WalletPage() {
     const [activeSwitch, setActiveSwitch] = useState(false)
@@ -22,8 +23,9 @@ export default function WalletPage() {
                         <button className="btn bg-none">Dataset</button>
                     </div>
                     <div className="right">
-                        <button className="btn outline">
-                            <img src={FilterIcon} alt="" />
+                        <button className="wallet-btn"
+                        >
+                            <Image src={FilterIcon} alt="" />
                             Filter
                         </button>
                     </div>

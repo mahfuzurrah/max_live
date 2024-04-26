@@ -1,9 +1,10 @@
+import { CardItem } from "@/app/(dashboard)/dashboard/types";
 import Card1 from "@/public/images/active_accounts.svg";
 import DeactivatedAccounts from "@/public/images/deactivated_accounts.svg";
 import Card3 from "@/public/images/payment.svg";
 import Card4 from "@/public/images/transactions.svg";
 
-const CardData = [
+const CardData: CardItem[] = [
   {
     imgSrc: Card1,
     title: "Active models",

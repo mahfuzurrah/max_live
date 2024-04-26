@@ -1,8 +1,10 @@
 import React from "react";
 import ArroUp from "@/public/images/up.svg";
 import Image from "next/image";
+import { CardItem } from "@/app/(dashboard)/dashboard/types";
 
-const OverviewCard = ({ imgSrc, title, number, gain }) => {
+
+const OverviewCard = ({ imgSrc, title, number, gain }: CardItem) => {
   return (
     <div className="overview_card">
       <div className="title">
