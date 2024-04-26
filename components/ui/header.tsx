@@ -77,6 +77,15 @@ export default function Header() {
                       </svg>
                     </Link>
                   </li>
+                  <li>
+                    <Link
+                      href="/dashboard"
+                      title="dashboard"
+                      className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3"
+                    >
+                      <span>Dashboard</span>
+                    </Link>
+                  </li>
                 </>
               )}
             </ul>
