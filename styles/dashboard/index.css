@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
 :root {
   --primary-color: #611d56;
   --secondary-color: #f9f1e6;
@@ -180,7 +181,7 @@ section {
   font-size: 20px;
 }
 
-.btn {
+.ant-layout .btn {
   padding: 5px 26px;
   background: var(--primary-color);
   border-radius: 12px;
@@ -193,38 +194,38 @@ section {
   text-align: center;
   gap: 10px;
 }
-.btn.bg-none {
+.ant-layout .btn.bg-none {
   background: transparent;
   color: var(--desc-color);
 }
-.btn.outline {
+.ant-layout .btn.outline {
   background: transparent;
   color: var(--desc-color);
   font-weight: var(--font-medium);
   border: 1px solid #c4c4c4 !important;
 }
-.btn.outline img {
+.ant-layout .btn.outline img {
   color: var(--primary-color) !important;
   fill: var(--primary-color) !important;
 }
-.btn.outline:hover {
+.ant-layout .btn.outline:hover {
   border: 1px solid var(--primary-color);
   background: transparent;
   color: var(--primary-color) !important;
   fill: var(--primary-color) !important;
 }
-.btn.outline:hover img {
+.ant-layout .btn.outline:hover img {
   color: var(--primary-color) !important;
   fill: var(--primary-color) !important;
 }
 
-.btn:hover {
+.ant-layout .btn:hover {
   background: #481640;
   transition: all 0.3s ease-in-out;
   color: var(--white-color) !important;
 }
 
-.btn:hover .icons {
+.ant-layout .btn:hover .icons {
   transition: all 0.3s ease-in-out;
   color: var(--white-color);
 }
@@ -234,7 +235,7 @@ section {
   width: 100%;
   height: 50vh;
   /* background-image: url(./components/assets/img/bg.png); */
-  background-image: url(../../..//public/images/bg.png);
+  /* background-image: url(../../public/images/bg.png); */
   background-position: fixed;
   position: fixed;
   top: 0;
@@ -260,7 +261,7 @@ section {
   text-align: center;
 }
 
-.from_area .btn_group {
+.from_area .ant-layout .btn_group {
   display: flex;
   align-items: center;
   gap: 16px;
@@ -268,21 +269,21 @@ section {
   margin: 30px 0;
 }
 
-.from_area .btn {
+.from_area .ant-layout .btn {
   width: 100%;
   width: -moz-fit-content;
   width: fit-content;
 }
 
-.from_area .btn_group .btn {
+.from_area .ant-layout .btn_group .ant-layout .btn {
   font-size: 14px;
 }
 
-.from_area .btn.sign_in_btn {
+.from_area .ant-layout .btn.sign_in_btn {
   width: 100% !important;
 }
 
-.from_area .tn_group .btn {
+.from_area .tn_group .ant-layout .btn {
   width: -moz-min-content !important;
   width: min-content !important;
 }
@@ -315,7 +316,7 @@ section {
   width: 100%;
 }
 
-.modal-body .btn {
+.modal-body .ant-layout .btn {
   width: 100%;
 }
 
@@ -420,7 +421,7 @@ section {
   margin-bottom: 20px;
 }
 
-.table_header .btn {
+.table_header .ant-layout .btn {
   width: -moz-max-content;
   width: max-content;
 }
@@ -476,7 +477,7 @@ input.ant-input.css-dev-only-do-not-override-1qfezbu.ant-input-outlined {
     display: flex !important;
     flex-direction: column;
   }
-  .from_area .btn_group {
+  .from_area .ant-layout .btn_group {
     flex-wrap: wrap;
   }
   .sign_in_area {
@@ -493,7 +494,7 @@ input.ant-input.css-dev-only-do-not-override-1qfezbu.ant-input-outlined {
     position: sticky;
     top: 0;
   }
-  .from_area .btn {
+  .from_area .ant-layout .btn {
     width: 100% !important;
   }
 }
@@ -501,7 +502,7 @@ input.ant-input.css-dev-only-do-not-override-1qfezbu.ant-input-outlined {
   .time h1 {
     font-size: 20px;
   }
-  .sign_in_area .btn {
+  .sign_in_area .ant-layout .btn {
     font-size: 14px;
   }
   .from_area {
@@ -513,7 +514,7 @@ input.ant-input.css-dev-only-do-not-override-1qfezbu.ant-input-outlined {
   .from_area .input_group .mt-3 {
     margin-top: 0 !important;
   }
-  .from_area .btn_group {
+  .from_area .ant-layout .btn_group {
     margin: 16px 0;
     gap: 10px;
   }
@@ -884,7 +885,7 @@ input.ant-input.css-dev-only-do-not-override-1qfezbu.ant-input-outlined {
   display: flex;
   gap: 40px;
 }
-.model-edit .main-content .btn {
+.model-edit .main-content .ant-layout .btn {
   width: 100px;
 }
 

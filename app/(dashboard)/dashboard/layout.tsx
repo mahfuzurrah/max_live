@@ -5,8 +5,8 @@ import { Layout } from "antd";
 import DashboardSidebar from "@/components/dashboard/DashboardSidebar";
 const { Header, Content } = Layout;
 import Navbar from "@/components/dashboard/Navbar";
-import "../../css/dashboard/layout.css"
-import "../../css/dashboard/index.css"
+import "../.././../styles/dashboard/index.css";
+import "../.././../styles/dashboard/layout.css";
 
 export default function DashboardLayout({
     children,
