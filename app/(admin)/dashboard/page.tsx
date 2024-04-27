@@ -1,17 +1,22 @@
 "use client";
+import dynamic from 'next/dynamic';
+
 
 import { Select } from "antd";
-import React from "react";
+import Image from "next/image";
 import DeactivatedAccounts from '@/public/images/deactivated_accounts.svg';
 import ArroUp from '@/public/images/deactivated_accounts.svg';
 import camers_icons from "@/public/images/live_stream.svg"
 import star from "@/public/images/star.svg"
 import data from '@/components/dashboard/card/CardData';
-import PieChart from "@/components/dashboard/chart/PieChart";
-import TopModelCard from "@/components/dashboard/card/TopModelCard";
-import OverviewCard from "@/components/dashboard/card/OverviewCard";
-import TopModelData from "@/components/dashboard/card/TopModelData";
-import Image from "next/image";
+import topModelData from "@/components/dashboard/card/TopModelData";
+// import PieChart from "@/components/dashboard/chart/PieChart";
+// import TopModelCard from "@/components/dashboard/card/TopModelCard";
+// import OverviewCard from "@/components/dashboard/card/OverviewCard";
+
+const TopModelCard = dynamic(() => import('@/components/dashboard/card/TopModelCard'), { ssr: false });
+const OverviewCard = dynamic(() => import('@/components/dashboard/card/OverviewCard'), { ssr: false });
+const PieChart = dynamic(() => import('@/components/dashboard/chart/PieChart'), { ssr: false });
 
 const handleChange = (value: any) => {
     // console.log(`selected ${value}`);
@@ -111,7 +116,7 @@ export default function Dashboard() {
                         <h6 className="see-all-btn">See All</h6>
                     </div>
                     <div className="card-item-area">
-                        {TopModelData.map((userData, index) => (
+                        {topModelData.map((userData, index) => (
                             <TopModelCard
                                 key={index}
                                 count={userData.count}
