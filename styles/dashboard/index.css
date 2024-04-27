@@ -302,7 +302,7 @@ section {
 .input_f,
 .text_box {
   display: flex;
-  align-items: flex-start;
+  align-items: flex-flex-start;
   flex-direction: column;
   width: 100%;
 }
@@ -402,7 +402,7 @@ section {
 
 .dashboard .card .time span {
   display: flex;
-  align-items: flex-end;
+  align-items: flex-flex-end;
   flex-direction: row;
   gap: 8px;
 }
@@ -750,7 +750,7 @@ input.ant-input.css-dev-only-do-not-override-1qfezbu.ant-input-outlined {
   display: flex;
   justify-content: space-between;
   margin-bottom: 16px;
-  align-items: start;
+  align-items: flex-start;
 }
 .dashboard .my-model-card .header-area .title {
   font-size: 20px;
@@ -914,7 +914,7 @@ input.ant-input.css-dev-only-do-not-override-1qfezbu.ant-input-outlined {
 }
 .overview_card .title {
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   gap: 16px;
 }
 .overview_card .title .active-content .active-text {

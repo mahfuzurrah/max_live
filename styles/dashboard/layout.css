@@ -69,8 +69,8 @@
   .side_navbar .btn {
     width: 100%;
     margin-top: 20px;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: flex-flex-start;
+    justify-content: flex-flex-start;
     background: var(--white-color);
     color: var(--title-color);
   }
@@ -91,7 +91,7 @@
     background: var(--body-color);
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
     gap: 30px;
     padding: 20px;
     z-index: 99;
